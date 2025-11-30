@@ -1,0 +1,103 @@
+   0.082860800s  INFO prepare_target{force=false package_id=demo v0.1.0 (C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo) target="demo"}: cargo::core::compiler::fingerprint: fingerprint error for demo v0.1.0 (C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo)/Check { test: false }/TargetInner { name: "demo", doc: true, ..: with_path("C:\\Users\\shyi8\\OneDrive\\Desktop\\rust-learn\\demo\\src\\main.rs", Edition2024) }
+   0.083842200s  INFO prepare_target{force=false package_id=demo v0.1.0 (C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo) target="demo"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo\target\debug\.fingerprint\demo-5eba57e7e2f94bea\bin-demo`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+   0.201871600s  INFO prepare_target{force=false package_id=random v0.14.1 target="random"}: cargo::core::compiler::fingerprint: fingerprint error for random v0.14.1/Check { test: false }/TargetInner { ..: lib_target("random", ["lib"], "C:\\Users\\shyi8\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\random-0.14.1\\src\\lib.rs", Edition2021) }
+   0.201988200s  INFO prepare_target{force=false package_id=random v0.14.1 target="random"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo\target\debug\.fingerprint\random-b7a14e729f5d60dc\lib-random`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::cli::main
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  19: main
+  20: __tmainCRTStartup
+  21: mainCRTStartup
+  22: <unknown>
+  23: <unknown>
+   0.203986800s  INFO prepare_target{force=false package_id=demo v0.1.0 (C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo) target="demo"}: cargo::core::compiler::fingerprint: fingerprint error for demo v0.1.0 (C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo)/Check { test: true }/TargetInner { name: "demo", doc: true, ..: with_path("C:\\Users\\shyi8\\OneDrive\\Desktop\\rust-learn\\demo\\src\\main.rs", Edition2024) }
+   0.204050200s  INFO prepare_target{force=false package_id=demo v0.1.0 (C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo) target="demo"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo\target\debug\.fingerprint\demo-e737047cce0ab8fc\test-bin-demo`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+    Checking random v0.14.1
+    Checking demo v0.1.0 (C:\Users\shyi8\OneDrive\Desktop\rust-learn\demo)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.98s
