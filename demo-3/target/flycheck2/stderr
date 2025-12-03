@@ -1,0 +1,68 @@
+   0.020431100s  INFO prepare_target{force=false package_id=demo-3 v0.1.0 (E:\rust\rust-learn\demo-3) target="demo-3"}: cargo::core::compiler::fingerprint: fingerprint error for demo-3 v0.1.0 (E:\rust\rust-learn\demo-3)/Check { test: false }/TargetInner { name: "demo-3", doc: true, ..: with_path("E:\\rust\\rust-learn\\demo-3\\src\\main.rs", Edition2024) }
+   0.020490600s  INFO prepare_target{force=false package_id=demo-3 v0.1.0 (E:\rust\rust-learn\demo-3) target="demo-3"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\rust\rust-learn\demo-3\target\debug\.fingerprint\demo-3-34acec6b5a35d14c\bin-demo-3`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+   0.041306400s  INFO prepare_target{force=false package_id=demo-3 v0.1.0 (E:\rust\rust-learn\demo-3) target="demo-3"}: cargo::core::compiler::fingerprint: fingerprint error for demo-3 v0.1.0 (E:\rust\rust-learn\demo-3)/Check { test: true }/TargetInner { name: "demo-3", doc: true, ..: with_path("E:\\rust\\rust-learn\\demo-3\\src\\main.rs", Edition2024) }
+   0.041366400s  INFO prepare_target{force=false package_id=demo-3 v0.1.0 (E:\rust\rust-learn\demo-3) target="demo-3"}: cargo::core::compiler::fingerprint:     err: failed to read `E:\rust\rust-learn\demo-3\target\debug\.fingerprint\demo-3-d9c40f030e1348ec\test-bin-demo-3`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/ed61e7d7e242494fb7057f2657300d9e77bb4fcb/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+    Checking demo-3 v0.1.0 (E:\rust\rust-learn\demo-3)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.40s
