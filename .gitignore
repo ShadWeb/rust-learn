@@ -1,0 +1,10 @@
+# Rust build
+**/target
+**/*.rs.bk
+
+# VSCode
+.vscode/
+
+# Windows
+Thumbs.db
+*.log
